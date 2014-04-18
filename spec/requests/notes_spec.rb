@@ -16,7 +16,14 @@ describe "Notes" do
     it { should have_selector('h2#experience', text: "Work Experience") }
     it { should have_selector('h2#skills', text: "Skills") }
     it { should have_selector('h2#objectives', text: "Objectives") }
+
     it { should have_content("Reference available upon request") }
+
+    it { should have_link("Personal Details", href: "#personal") }
+    it { should have_link("Education and Qualification", href:"#education") }
+    it { should have_link("Work Experience", href: "#experience") }
+    it { should have_link("Skills", href: "#skills") }
+    it { should have_link("Objectives", href: "#objectives") }
 
     describe "variable" do
     end
