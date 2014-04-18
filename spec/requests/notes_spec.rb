@@ -24,8 +24,6 @@ describe "Notes" do
     it { should have_link("Work Experience", href: "#experience") }
     it { should have_link("Skills", href: "#skills") }
     it { should have_link("Objectives", href: "#objectives") }
-
-    describe "variable" do
-    end
+    it { should have_link("Send me an email", href:"mailto:chiahau300@gmail.com?Subject=Job%20Offer") }
   end
 end
