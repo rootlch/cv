@@ -1,1 +1,79 @@
 @import "bootstrap";
+
+$off-black: #333333;
+
+.jumbotron {
+	background-color: #a6ba00;
+	color: white;
+	margin-top: 10px;
+}
+
+.main-content {
+	padding-left: 0;
+
+	> ol > li {
+		margin-bottom: 20px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+
+	h2 {
+		margin-top: 0;
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #dddddd;
+		font-size: 150%;
+	}
+
+	h3 {
+		font-size: 120%;
+	}
+
+	ul {
+		padding-left: 20px;
+	}
+
+	.list li{
+		padding-bottom: 10px;
+	}
+}
+
+.right-nav {
+	li {
+		padding: 0;
+	}
+	a {
+		padding: 10px 15px;
+		display: block;
+		
+		&:hover, .active {
+			background-color: #889800;
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+a {
+	color: #889800;
+
+	&:hover {
+		color: #889800;
+	}
+}
+
+table {
+	td {
+		padding-bottom: 5px;
+	}
+	
+	.seperator {
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+	
+	.label {
+		color: $off-black;
+		font-size: 85%;
+	}
+}

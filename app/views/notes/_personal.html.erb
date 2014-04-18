@@ -1,0 +1,10 @@
+<h2>Personal Details</h2>
+<table>
+  <% @personal_details.each do |label, content| %>
+    <tr>
+      <td><%= label %></td>
+      <td class="seperator">:</td>
+      <td><%= content %></td>
+    </tr>
+  <% end %>
+</table>
