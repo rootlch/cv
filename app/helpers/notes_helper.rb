@@ -1,4 +1,26 @@
 module NotesHelper
+
+  def note(title, options = {})
+    note_header(title, options[:id]) + content_tag(:div, yield, {
+      id: "#{options[:id]}-target", 
+      class: "collapse in"
+    })
+  end
+
+  def note_header(title, id)
+    content = note_header_toggle(id) 
+    content += content_tag(:h2, title, id: id)
+    content_tag(:div, content)
+  end
+
+  def note_header_toggle(id)
+    content_tag(:button, "Toggle", {
+      class: "toggle btn btn-default", 
+      "data-toggle" => "collapse", 
+      "data-target" => "\##{id}-target"
+    })
+  end
+
   def table_tag(hash)
     rows = []
     hash.each do |label, content|

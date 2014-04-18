@@ -4,28 +4,33 @@
   <div class="col-xs-9 main-content">
     <ol class="list-group">
       <li class="list-group-item">
-      <h2 id="personal">Personal Details</h2>
-      <%= table_tag @personal_details %>
+      <%= note "Personal Details", id: "personal" do %>
+        <% table_tag @personal_details %>
+      <% end %>
       </li>
 
       <li class="list-group-item">
-      <h2 id="skills">Skills</h2>
-      <%= table_tag @skills %>
+      <%= note "Skills", id: "skills" do %>
+        <% table_tag @skills %>
+      <% end %>
       </li>
 
       <li class="list-group-item">
-      <h2 id="experience">Work Experience</h2>
-      <%= list_tag @work_experience %>
+      <%= note "Work Experience", id: "experience" do %>
+        <% list_tag @work_experience %>
+      <% end %>
       </li>
 
       <li class="list-group-item">
-      <h2 id="objectives">Objectives</h2>
-      <%= list_tag @objectives %>
+      <%= note "Objectives", id: "objectives" do %>
+        <% list_tag @objectives %>
+      <% end %>
       </li>
 
       <li class="list-group-item">
-      <h2 id="education">Education and Qualification</h2>
-      <%= list_tag @education_and_qualification %>
+      <%= note "Education and Qualification", id: "education" do %>
+        <% list_tag @education_and_qualification %>
+      <% end %>
       </li>
 
       <li class="list-group-item">
