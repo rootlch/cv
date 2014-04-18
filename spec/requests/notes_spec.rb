@@ -10,6 +10,7 @@ describe "Notes" do
     end
 
     before { visit root_path }
+    it { should have_title "CV | Lim Chia Hau" }
     it { should have_selector('h1', text: 'CV') }
     it { should have_selector('h2#personal', text: "Personal Details") }
     it { should have_selector('h2#education', text: "Education and Qualification") }
