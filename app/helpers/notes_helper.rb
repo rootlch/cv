@@ -32,9 +32,25 @@ module NotesHelper
   #assumes that the first column is the label
   def table_row(*columns)
     label = content_tag(:td, columns.shift, class:"label") 
-    columns = columns.map { |e| content_tag(:td, e) }
+    columns = columns.map { |e| content_tag(:td, format_tag(e)) }
     seperator = content_tag(:td, ":", class: "seperator")
     content_tag(:tr, label + seperator + columns.reduce(:+))
+  end
+
+  def format_tag(content)
+    if url?(content)
+      link_to content, content
+    else
+      content
+    end
+  end
+
+  def url?(content)
+    if (content =~ URI.regexp("http") || content =~ URI.regexp("https"))
+      true
+    else
+      false
+    end
   end
 
   def labeled_list_tag(hash)
