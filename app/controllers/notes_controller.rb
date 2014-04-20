@@ -33,7 +33,7 @@ class NotesController < ApplicationController
       "Phone" => "+6014-213 8964",
       "Email/iMessage" => "chia_hau@hotmail.com",
       "Age" => age(1988),
-      "Timezone" => "UTC+08.00 (2 hours difference compared to Sydney)",
+      "Timezone" => "UTC+08.00 (2 hours difference compared to Caberra and Melbourne)",
       "Github" => "https://github.com/rootlch?tab=repositories"
     }
   end
