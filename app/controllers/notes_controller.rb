@@ -33,7 +33,8 @@ class NotesController < ApplicationController
       "Name" => "Lim Chia Hau",
       "Address" => "712 Jalan Lavender Heights 22, Taman Lavender Heights, 70450 Seremban, Negeri Sembilan. Malaysia.",
       "Phone" => "+6014-213 8964",
-      "Email/iMessage" => "chia_hau@hotmail.com",
+      "Email" => "chiahau300@gmail.com",
+      "iMessage" => "chia_hau@hotmail.com",
       "Age" => age(1988),
       "Timezone" => "UTC+08.00 (2 hours difference compared to Caberra and Melbourne)",
       "Github" => "https://github.com/rootlch?tab=repositories"
