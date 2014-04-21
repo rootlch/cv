@@ -77,6 +77,7 @@ class NotesController < ApplicationController
   end
 
   def setup
+    #chia_hau@hotmail.com not working properly
     @email = "chiahau300@gmail.com"
   end
 end
