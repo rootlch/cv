@@ -1,4 +1,6 @@
 class NotesController < ApplicationController
+  before_filter :setup
+
   def index
     @personal_details = personal_details
 
@@ -72,5 +74,9 @@ class NotesController < ApplicationController
 
   def age(year_of_birth)
     Time.now.year - year_of_birth
+  end
+
+  def setup
+    @email = "chiahau300@gmail.com"
   end
 end
